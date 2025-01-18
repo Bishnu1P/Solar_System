@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth - Solar System</title>
+    <style>
+        /* Base and Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #4a4a4a);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #f04c4c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #f0a500;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .planet-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .planet-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .short-description {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight {
+            background: #f0a500;
+            color: black;
+            padding: 0 6px;
+            border-radius: 3px;
+        }
+
+        .planet-facts {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .planet-facts h2 {
+            color: #f04c4c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .planet-facts ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .planet-facts ul li::before {
+            content: '★';
+            color: #f04c4c;
+            margin-right: 10px;
+        }
+
+        .quiz-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quiz-section h2 {
+            color: #f0a500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-options {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .quiz-options button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-options button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .quiz-feedback {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Earth</h1>
+        <nav>
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="planet-image">
+            <img src="images/earth1.jpg" alt="Earth">
+        </div>
+
+        <div class="short-description">
+            <p>
+                <b>Earth</b>, our vibrant <span class="highlight">home planet</span>, is the third from the Sun and the only known world to <span class="highlight">support life</span>. It features breathtaking landscapes, vast oceans covering <span class="highlight">71%</span> of its surface, and a life-sustaining atmosphere. With its dynamic climate, rich biodiversity, and protective magnetic field, Earth is a unique and thriving <span class="highlight">oasis</span> in the vastness of space.
+            </p>
+        </div>
+
+        <div class="planet-facts">
+            <h2>Some Fun Facts about Earth</h2>
+            <ul>
+                <li>Earth spins at about 1,670 km/h (1,037 mph) at the equator, making a full rotation every 24 hours.</li>
+                <li>Earth and Venus are often called twins because they're similar in size and structure, but Venus is way hotter and inhospitable.</li>
+                <li>Around 71% of Earth's surface is covered in water, which is why it looks blue from space.</li>
+                <li>Earth might seem massive, but it could fit over 1.3 million times into the Sun!</li>
+                <li>Earth’s magnetic field acts as a shield, protecting us from harmful solar radiation.</li>
+          </ul>
+        </div>
+
+        <div class="quiz-section">
+            <h2>Quiz: Test Your Knowledge About Earth!</h2>
+            <div class="quiz-question">
+                <p>1. What percentage of earth's surface is covered with water??</p>
+                <button onclick="toggleOptions(1)">Show Options</button>
+                <div class="quiz-options" id="options-1">
+                    <button onclick="checkAnswer(1, true)">71%</button>
+                    <button onclick="checkAnswer(1, false)">75%</button>
+                    <button onclick="checkAnswer(1, false)">70%</button>
+                </div>
+                <p id="feedback-1" class="quiz-feedback"></p>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. At what speed does earth spin at equator?</p>
+                <button onclick="toggleOptions(2)">Show Options</button>
+                <div class="quiz-options" id="options-2">
+                    <button onclick="checkAnswer(2, false)">1000km/hr</button>
+                    <button onclick="checkAnswer(2, true)">1670 km/hr</button>
+                    <button onclick="checkAnswer(2, false)">1600 km/hr</button>
+                </div>
+                <p id="feedback-2" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>3. How many times could Earth fit into the Sun?</p>
+                <button onclick="toggleOptions(3)">Show Options</button>
+                <div class="quiz-options" id="options-3">
+                    <button onclick="checkAnswer(3, false)">Over 1.5 million times</button>
+                    <button onclick="checkAnswer(3, false)">Over 1 million times</button>
+                    <button onclick="checkAnswer(3, true)">Over 1.3 million times</button>
+                </div>
+                <p id="feedback-3" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>4. What is Earth's position from the Sun in the Solar System?</p>
+                <button onclick="toggleOptions(4)">Show Options</button>
+                <div class="quiz-options" id="options-4">
+                    <button onclick="checkAnswer(4, false)">Fourth</button>
+                    <button onclick="checkAnswer(4, false)">Second</button>
+                    <button onclick="checkAnswer(4, true)">Third</button>
+                </div>
+                <p id="feedback-4" class="quiz-feedback"></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BISHNU PRADHAN</p>
+    </footer>
+
+    <script>
+        function toggleOptions(question) {
+            const options = document.getElementById(`options-${question}`);
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'block';
+            } else {
+                options.style.display = 'none';
+            }
+        }
+
+        function checkAnswer(question, isCorrect) {
+            const feedback = document.getElementById(`feedback-${question}`);
+            if (isCorrect) {
+                feedback.textContent = "Correct! Well done.";
+                feedback.style.color = "lightgreen";
+            } else {
+                feedback.textContent = "Incorrect! Try again.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

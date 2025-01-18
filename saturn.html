@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn - Solar System</title>
+    <style>
+        /* Base and Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #4a4a4a);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #f04c4c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #f0a500;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .planet-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .planet-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .short-description {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight {
+            background: #f0a500;
+            color: black;
+            padding: 0 6px;
+            border-radius: 3px;
+        }
+
+        .planet-facts {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .planet-facts h2 {
+            color: #f04c4c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .planet-facts ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .planet-facts ul li::before {
+            content: '★';
+            color: #f04c4c;
+            margin-right: 10px;
+        }
+
+        .quiz-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quiz-section h2 {
+            color: #f0a500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-options {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .quiz-options button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-options button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .quiz-feedback {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saturn</h1>
+        <nav>
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="planet-image">
+            <img src="images/saturn.jpg" alt="Saturn">
+        </div>
+
+        <div class="short-description">
+            <p>
+                Saturn is the sixth planet from the Sun and the <span class="highlight">second-largest</span> in the Solar System, known for its stunning and extensive ring system made of ice, dust, and rock. A gas giant composed mainly of hydrogen and helium, it has at least 145 moons, including Titan, which is larger than Mercury. Saturn’s diameter is about 9.5 times that of Earth, and it completes one rotation in just <span class="highlight">10.7 hours</span>, but a year takes <span class="highlight">29.5 Earth years</span>.
+
+            </p>
+        </div>
+
+        <div class="planet-facts">
+            <h2>Some Fun Facts about Saturn</h2>
+            <ul>
+                <li>
+                    Saturn is so light for its size that it would float in water if you could find a bathtub big enough!
+                </li>
+                <li>
+                    Saturn’s rings are the most famous in the Solar System and stretch over 280,000 km wide, but they are only about 10 meters thick!
+                </li>
+                <li>
+                    Saturn has at least 145 moons and moonlets, and Titan, its largest moon, is bigger than Mercury and has rivers and lakes of liquid methane.
+
+
+                </li>
+                <li>
+                    Winds on Saturn can reach speeds of 1,800 km/h (1,118 mph), making it one of the windiest planets in the Solar System.
+
+
+                </li>
+                <li>
+                    NASA’s Cassini spacecraft ended its mission by plunging into Saturn in 2017, sending back incredible data until the very end.
+                </li>
+            </ul>
+        </div>
+
+        <div class="quiz-section">
+            <h2>Quiz: Test Your Knowledge About Saturn!</h2>
+            <div class="quiz-question">
+                <p>1. What is Saturn primarily made of?</p>
+                <button onclick="toggleOptions(1)">Show Options</button>
+                <div class="quiz-options" id="options-1">
+                    <button onclick="checkAnswer(1, true)">
+                     Hydrogen and helium</button>
+                    <button onclick="checkAnswer(1, false)">Rock and metals</button>
+                    <button onclick="checkAnswer(1, false)">The ice and dust</button>
+                </div>
+                <p id="feedback-1" class="quiz-feedback"></p>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. How many moon does Saturn have?</p>
+                <button onclick="toggleOptions(2)">Show Options</button>
+                <div class="quiz-options" id="options-2">
+                    <button onclick="checkAnswer(2, false)">Its 27</button>
+                    <button onclick="checkAnswer(2, true)">145</button>
+                    <button onclick="checkAnswer(2, false)">100</button>
+                </div>
+                <p id="feedback-2" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>3. What is unique about Saturn's densty?</p>
+                <button onclick="toggleOptions(3)">Show Options</button>
+                <div class="quiz-options" id="options-3">
+                    <button onclick="checkAnswer(3, false)">It is denser than water</button>
+                    <button onclick="checkAnswer(3, false)">It is most dense planet in the solat system</button>
+                    <button onclick="checkAnswer(3, true)">It is light enough to float in water</button>
+                </div>
+                <p id="feedback-3" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>4. How thick are Saturn's rings?</p>
+                <button onclick="toggleOptions(4)">Show Options</button>
+                <div class="quiz-options" id="options-4">
+                    <button onclick="checkAnswer(4, false)">1 meter</button>
+                    <button onclick="checkAnswer(4, false)">100 meters</button>
+                    <button onclick="checkAnswer(4, true)">10 meters</button>
+                </div>
+                <p id="feedback-4" class="quiz-feedback"></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BISHNU PRADHAN</p>
+    </footer>
+
+    <script>
+        function toggleOptions(question) {
+            const options = document.getElementById(`options-${question}`);
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'block';
+            } else {
+                options.style.display = 'none';
+            }
+        }
+
+        function checkAnswer(question, isCorrect) {
+            const feedback = document.getElementById(`feedback-${question}`);
+            if (isCorrect) {
+                feedback.textContent = "Correct! Well done.";
+                feedback.style.color = "lightgreen";
+            } else {
+                feedback.textContent = "Incorrect! Try again.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

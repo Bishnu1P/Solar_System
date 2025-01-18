@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus - Solar System</title>
+    <style>
+        /* Base and Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #4a4a4a);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #f04c4c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #f0a500;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .planet-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .planet-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .short-description {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight {
+            background: #f0a500;
+            color: black;
+            padding: 0 6px;
+            border-radius: 3px;
+        }
+
+        .planet-facts {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .planet-facts h2 {
+            color: #f04c4c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .planet-facts ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .planet-facts ul li::before {
+            content: '★';
+            color: #f04c4c;
+            margin-right: 10px;
+        }
+
+        .quiz-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quiz-section h2 {
+            color: #f0a500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-options {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .quiz-options button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-options button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        .quiz-feedback {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Neptune</h1>
+        <nav>
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="planet-image">
+            <img src="images/neptune.png" alt="Neptune">
+        </div>
+
+        <div class="short-description">
+            <p>
+                Neptune is the <span class="highlight">8th</span> planet from the Sun and the <span class="highlight">farthest</span> in our solar system. Known as an ice giant, it has a deep blue color caused by methane in its atmosphere. Discovered in 1846, Neptune is renowned for its powerful winds, the fastest in the solar system, reaching speeds of over 2,100 km/h (1,300 mph). It has 14 known moons, with Triton being the largest, and completes an orbit around the Sun in about <span class="highlight">165 Earth years.</span></p>
+        </div>
+
+        <div class="planet-facts">
+            <h2>Some Fun Facts about Neptune</h2>
+            <ul>
+                <li>
+                    Neptune holds the record for the fastest winds in the solar system, reaching speeds of over 2,100 km/h (1,300 mph). That’s faster than the speed of sound on Earth!
+                </li>
+                <li>
+                    Neptune was the first planet discovered through mathematical predictions rather than direct observation, thanks to scientists Urbain Le Verrier and John Couch Adams in 1846
+                </li>
+                <li>
+                    Like Uranus and Jupiter, Neptune has rings, but they’re faint and made of dust and ice particles.
+                </li>
+                <li>
+                    Despite its long orbit, a day on Neptune is only 16 hours long because of its rapid rotation.
+                </li>
+                <li>
+                    Since Pluto’s reclassification as a dwarf planet in 2006, Neptune officially became the farthest planet from the Sun.
+                </li>
+            </ul>
+        </div>
+
+        <div class="quiz-section">
+            <h2>Quiz: Test Your Knowledge About Neptune!</h2>
+            <div class="quiz-question">
+                <p>1. Who were the scientists responsible for predicting Neptune’s existence through mathematics?</p>
+                <button onclick="toggleOptions(1)">Show Options</button>
+                <div class="quiz-options" id="options-1">
+                    <button onclick="checkAnswer(1, true)">Urbain Le Verrier and John Couch Adams
+                     </button>
+                    <button onclick="checkAnswer(1, false)">William Herschel and Galileo Galilei</button>
+                    <button onclick="checkAnswer(1, false)"> Isaac Newton and Tycho Brahe</button>
+                </div>
+                <p id="feedback-1" class="quiz-feedback"></p>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. What is the length of a day on Neptune?</p>
+                <button onclick="toggleOptions(2)">Show Options</button>
+                <div class="quiz-options" id="options-2">
+                    <button onclick="checkAnswer(2, true)">16 hours</button>
+                    <button onclick="checkAnswer(2, false)">10 hours</button>
+                    <button onclick="checkAnswer(2, false)">24 hours</button>
+                </div>
+                <p id="feedback-2" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>3. What are Neptune’s rings primarily made of?</p>
+                <button onclick="toggleOptions(3)">Show Options</button>
+                <div class="quiz-options" id="options-3">
+                    <button onclick="checkAnswer(3, false)"> Gases like hydrogen and methane</button>
+                    <button onclick="checkAnswer(3, false)">Metallic compounds</button>
+                    <button onclick="checkAnswer(3, true)"> Dust and ice particles</button>
+                </div>
+                <p id="feedback-3" class="quiz-feedback"></p>
+            </div>
+            <div class="quiz-question">
+                <p>4. How long does it take Neptune to complete one orbit around the Sun?</p>
+                <button onclick="toggleOptions(4)">Show Options</button>
+                <div class="quiz-options" id="options-4">
+                    <button onclick="checkAnswer(4, false)">84 Earth years characters</button>
+                    <button onclick="checkAnswer(4, true)">165 Earth years</button>
+                    <button onclick="checkAnswer(4, false)">200 Earth years</button>
+                </div>
+                <p id="feedback-4" class="quiz-feedback"></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BISHNU PRADHAN</p>
+    </footer>
+
+    <script>
+        function toggleOptions(question) {
+            const options = document.getElementById(`options-${question}`);
+            if (options.style.display === 'none' || options.style.display === '') {
+                options.style.display = 'block';
+            } else {
+                options.style.display = 'none';
+            }
+        }
+
+        function checkAnswer(question, isCorrect) {
+            const feedback = document.getElementById(`feedback-${question}`);
+            if (isCorrect) {
+                feedback.textContent = "Correct! Well done.";
+                feedback.style.color = "lightgreen";
+            } else {
+                feedback.textContent = "Incorrect! Try again.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
